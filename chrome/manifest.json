@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "dreadit",
+  "description": "Removes url highjacking by a certain website.",
+  "version": "0.0.1",
+
+  "browser_action": 
+  {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": 
+  [{
+      "matches": ["http://reddit.com/*",
+				"https://reddit.com/*",
+				"http://*.reddit.com/*",
+				"https://*.reddit.com/*"],
+      "js": ["jquery-3.0.0.min.js","link.js"]
+  }],
+  "permissions": 
+  [
+    "http://reddit.com/*",
+	"https://reddit.com/*",
+	"http://*.reddit.com/*",
+	"https://*.reddit.com/*"
+  ]
+}

@@ -3,7 +3,7 @@
 
   "name": "dreadit",
   "description": "Removes url highjacking by a certain website.",
-  "version": "0.0.1",
+  "version": "0.0.2",
 
   "browser_action": 
   {
